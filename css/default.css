@@ -119,6 +119,14 @@ section#introduction {
 	margin-top: 190px;
 }
 
+footer {
+	text-align: center;
+	font-size: 11pt;
+	margin: 20pt 0 0 0;
+	padding: 20pt;
+	background: #f8f8f6;
+}
+
 h1 {
 	font-size: 20pt;
 }
