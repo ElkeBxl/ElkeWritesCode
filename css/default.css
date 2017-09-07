@@ -91,7 +91,12 @@ nav ul li a:hover {
 }
 
 body > section {
-	margin: 100px 0;
+	margin-left: 50px !important; /* don't like !important but we need it to override bootstrap */
+	margin-right: 50px !important;
+	margin-top: 50px;
+	border: 1px solid #ddd;
+	box-shadow: 0px 0px 5px #ddd;
+	padding: 20px;
 }
 
 body > section header h2 {
@@ -109,6 +114,7 @@ aside {
 
 section > article {
 	border-left: 1px solid #4f6d85;
+	padding: 0 20px;
 }
 
 @media (min-width: 970px) { 
@@ -123,7 +129,7 @@ body > section section {
 }
 
 section#introduction {
-	margin-top: 190px;
+	margin-top: 250px;
 }
 
 footer {
@@ -156,6 +162,17 @@ section#introduction aside {
 
 img#me {
 	border-radius: 50%;
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 300px;
+	border: 1px solid #ddd;
+	box-shadow: 0px 0px 5px #ddd;
+}
+
+article > section.project {
+	margin: 0;
+	padding: 0;
+}
+
+div.timeframe {
+	text-align: center;
 }
