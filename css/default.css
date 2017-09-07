@@ -111,6 +111,13 @@ section > article {
 	border-left: 1px solid #4f6d85;
 }
 
+@media (min-width: 970px) { 
+	section > article {
+		border-right: 1px solid #4f6d85;
+		border-left: 0;
+	}
+}
+
 body > section section {
 	margin: 20px 0;
 }
@@ -141,4 +148,14 @@ h2 {
 
 h2 a {
 	color: inherit;
+}
+
+section#introduction aside {
+	text-align: center;
+}
+
+img#me {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
 }
