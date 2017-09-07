@@ -121,6 +121,7 @@ body > section header h2:after {
 
 aside {
 	text-align: right;
+	line-height: 25px;
 }
 
 section > article, section > form {
@@ -179,6 +180,10 @@ h3 em {
 	font-style: normal;
 }
 
+p {
+	line-height: 25px;
+}
+
 p a, article a {
 	color: #e85b4a;
 	text-decoration: none;
@@ -208,6 +213,8 @@ article > section.project {
 
 div.timeframe {
 	text-align: center;
+	line-height: 25px;
+	color: #999;
 }
 
 form label {
