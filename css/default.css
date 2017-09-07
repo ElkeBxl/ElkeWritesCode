@@ -246,3 +246,33 @@ form input[type="submit"] {
 	border-radius: 5px;
 	height: 20pt;
 }
+
+ul.personal-links {
+	list-style: none;
+	margin: 20px 0px 0px 0px;
+	padding: 0;
+}
+
+ul.personal-links li {
+	float: left;
+	width: 33%;
+	line-height: 25px;
+	height: 25px;
+}
+
+ul.personal-links li:nth-child(3) {
+	clear: both;
+}
+
+ul.personal-links li span.glyphicon {
+	color: #e85b4a;
+}
+
+ul.personal-links li a {
+	color: #333;
+}
+
+ul.personal-links li a:hover {
+	text-decoration: none;
+	color: #e85b4a;
+}
