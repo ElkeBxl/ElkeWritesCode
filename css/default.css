@@ -2,8 +2,7 @@ body {
 	font-family: "Open Sans", arial, sans-serif;
 	font-size: 11pt;
 	font-weight: 400;
-	color: #333;
-	scroll-behavior: smooth;
+	color: #050506;
 }
 
 body > header {
@@ -71,7 +70,7 @@ nav ul li a:before {
 	height: 2px;
 	bottom: 0;
 	left: 0;
-	background-color: #4f6d85;
+	background-color: #e85b4a;
 	visibility: hidden;
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
@@ -87,7 +86,7 @@ nav ul li a:hover:before {
 
 nav ul li a:hover {
 	text-decoration: none;
-	color: #4f6d85;
+	color: #e85b4a;
 }
 
 body > section {
@@ -113,13 +112,13 @@ aside {
 }
 
 section > article {
-	border-left: 1px solid #4f6d85;
+	border-left: 1px solid #e85b4a;
 	padding: 0 20px;
 }
 
 @media (min-width: 970px) { 
 	section#introduction > article {
-		border-right: 1px solid #4f6d85;
+		border-right: 1px solid #e85b4a;
 		border-left: 0;
 	}
 }
@@ -149,6 +148,7 @@ h1 a {
 }
 
 h2 {
+	color: #e85b4a;
 	font-size: 16pt;
 }
 
