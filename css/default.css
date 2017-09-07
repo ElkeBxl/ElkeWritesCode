@@ -111,7 +111,7 @@ aside {
 	text-align: right;
 }
 
-section > article {
+section > article, section > form {
 	border-left: 1px solid #e85b4a;
 	padding: 0 20px;
 }
@@ -161,6 +161,16 @@ h2 a:hover {
 	text-decoration: none;
 }
 
+p a, article a {
+	color: #e85b4a;
+	text-decoration: none;
+}
+
+p a:hover, article a:hover {
+	color: inherit;
+	text-decoration: inherit;
+}
+
 section#introduction aside {
 	text-align: center;
 }
@@ -180,4 +190,28 @@ article > section.project {
 
 div.timeframe {
 	text-align: center;
+}
+
+form label {
+	float: left;
+	font-weight: 400;
+	font-size: 9pt;
+}
+
+form input, form textarea {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+form input[type="submit"] {
+	color: white;
+	background-color: #e85b4a;
+	border: 0;
+	border-radius: 5px;
+	height: 20pt;
 }
