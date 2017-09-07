@@ -112,7 +112,7 @@ section > article {
 }
 
 @media (min-width: 970px) { 
-	section > article {
+	section#introduction > article {
 		border-right: 1px solid #4f6d85;
 		border-left: 0;
 	}
