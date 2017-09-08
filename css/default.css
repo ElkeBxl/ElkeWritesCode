@@ -193,6 +193,7 @@ section#skills label {
 }
 
 section#skills .progress-bar {
+	transition-duration: 2s;
 	background-color: #e85b4a;
 	color: #e85b4a; /* temp disable showing the actual percentage */
 }
