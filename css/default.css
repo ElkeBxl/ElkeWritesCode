@@ -180,6 +180,23 @@ h3 em {
 	font-style: normal;
 }
 
+section#skills h3 {
+	font-size: 10pt;
+	border-left: 10pt solid #e85b4a;
+	padding: 0 0 0 5pt;
+	margin: 0 0 15pt 0;
+}
+
+section#skills label {
+	font-weight: 400;
+	font-size: 9pt;
+}
+
+section#skills .progress-bar {
+	background-color: #e85b4a;
+	color: #e85b4a; /* temp disable showing the actual percentage */
+}
+
 p {
 	line-height: 25px;
 }
