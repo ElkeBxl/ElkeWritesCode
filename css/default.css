@@ -3,6 +3,9 @@ body {
 	font-size: 11pt;
 	font-weight: 400;
 	color: #050506;
+	position: relative;
+	height: 100%;
+	overflow-y: scroll;
 }
 
 body > header {
@@ -90,7 +93,7 @@ nav ul li a:hover {
 }
 
 body > section {
-	margin-left: 50px !important; /* don't like !important but we need it to override bootstrap */
+	margin-left: 100px !important; /* don't like !important but we need it to override bootstrap */
 	margin-right: 50px !important;
 	margin-top: 50px;
 	border: 1px solid #ddd;
@@ -293,4 +296,46 @@ ul.personal-links li a {
 ul.personal-links li a:hover {
 	text-decoration: none;
 	color: #e85b4a;
+}
+
+div#navigation-dot {
+	position: fixed;
+	top: 200px;
+	left: 39px;
+	width: 30px;
+	height: 30px;
+	background: #e85b4a;
+	border: 4px solid #fff;
+	border-radius: 15px;
+	z-index: 1000;
+	margin: 0;
+	padding: 0;
+}
+
+body:before {
+    content:"";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    width: 0;
+    border-left: 4px solid #e85b4a;
+    border-right: 4px solid #e85b4a;
+	margin: 0;
+	padding: 0;
+}
+
+body:after {
+    content:"";
+    position: fixed;
+    z-index: 0;
+    top: 200px; /* should be equal to top position of the dot */
+    bottom: 0;
+    left: 50px;
+    width: 0;
+    border-left: 4px solid #ccc;
+    border-right: 4px solid #ccc;
+	margin: 0;
+	padding: 0;
 }
