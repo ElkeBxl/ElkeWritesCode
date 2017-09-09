@@ -154,9 +154,34 @@ footer {
 	text-align: center;
 	font-size: 11pt;
 	margin: 20pt 0 0 0 !important;
-	padding: 20pt;
+	padding: 20px;
+	height: 100px;
 	background: #f8f8f6;
 	z-index: 1;
+	box-shadow: 0px 0px 5px #ddd;
+}
+
+footer p {
+	letter-spacing: 7px;
+	color: #999;
+	font-weight: 300;
+	line-height: 60px;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	height: 60px;
+}
+
+footer p:before,
+footer p:after {
+	background: #e85b4a;
+	height: 2px;
+	content: '';
+	width: 100px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 7px; /* should be the same as the letter-spacing */
 }
 
 h1 {
