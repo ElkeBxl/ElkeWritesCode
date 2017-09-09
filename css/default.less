@@ -1,0 +1,371 @@
+body {
+	font-family: "Open Sans", arial, sans-serif;
+	font-size: 11pt;
+	font-weight: 400;
+	color: #050506;
+	position: relative;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+body > header {
+	height: 120px;
+	line-height: 80px;
+	background: #f8f8f6;
+	padding: 20px;
+	margin: 0 !important;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	box-shadow: 0px 0px 5px #ddd;
+}
+
+body > header.scrolled {
+	height: 70px;
+	line-height: 50px;
+	padding: 10px 20px;
+}
+
+body > header h1 {
+	margin: 0 0 0 100px;
+	background: url('../img/logo.lg.png') no-repeat;
+	background-size: 100% 100%;
+	height: 80px;
+	width: 267px;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+body > header.scrolled h1 {
+	background: url('../img/logo.xs.png') no-repeat;
+	background-size: contain;
+	height: 50px;
+}
+
+body > header h1 span {
+	visibility: hidden;
+}
+
+nav {
+}
+
+nav ul {
+	float: right;
+	margin-right: 25pt;
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	color: #333;
+	margin: 0 10pt;
+	display: inline-block;
+}
+
+nav ul li a {
+	color: inherit;
+	text-decoration: none;
+	position: relative;
+	padding: 5px;
+	font-size: 10pt;
+}
+
+nav ul li a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #e85b4a;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+nav ul li a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+nav ul li a:hover {
+	text-decoration: none;
+	color: #e85b4a;
+}
+
+body > section {
+	margin-left: 100px !important; /* don't like !important but we need it to override bootstrap */
+	margin-right: 50px !important;
+	margin-top: 50px;
+	border: 1px solid #ddd;
+	box-shadow: 0px 0px 5px #ddd;
+	padding: 20px;
+}
+
+body > section header h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: Dosis, arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	font-weight: 300;
+}
+
+body > section header h2:before,
+body > section header h2:after {
+	background: #e85b4a;
+	height: 2px;
+	content: '';
+	width: 100px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 7px; /* should be the same as the letter-spacing */
+}
+
+aside {
+	text-align: right;
+	line-height: 25px;
+}
+
+section > article, section > form {
+	border-left: 1px solid #e85b4a;
+	padding: 0 20px;
+}
+
+@media (min-width: 970px) { 
+	section#introduction > article {
+		border-right: 1px solid #e85b4a;
+		border-left: 0;
+	}
+}
+
+body > section section {
+	margin: 20px 0;
+}
+
+section#introduction {
+	margin-top: 160px;
+}
+
+footer {
+	text-align: center;
+	font-size: 11pt;
+	margin: 20pt 0 0 0 !important;
+	padding: 20px;
+	height: 100px;
+	background: #f8f8f6;
+	z-index: 1;
+	box-shadow: 0px 0px 5px #ddd;
+}
+
+footer p {
+	letter-spacing: 7px;
+	color: #999;
+	font-weight: 300;
+	line-height: 60px;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	height: 60px;
+}
+
+footer p:before,
+footer p:after {
+	background: #e85b4a;
+	height: 2px;
+	content: '';
+	width: 100px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 7px; /* should be the same as the letter-spacing */
+}
+
+h1 {
+	font-size: 20pt;
+}
+
+h1 a {
+	color: inherit;
+}
+
+h2 {
+	color: #e85b4a;
+	font-size: 16pt;
+}
+
+h2 a {
+	color: inherit;
+}
+
+h2 a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+h3 em {
+	color: #e85b4a;
+	font-style: normal;
+}
+
+section#skills h3 {
+	font-size: 10pt;
+	border-left: 10pt solid #e85b4a;
+	padding: 0 0 0 5pt;
+	margin: 0 0 15pt 0;
+}
+
+section#skills label {
+	font-weight: 400;
+	font-size: 9pt;
+}
+
+section#skills .progress-bar {
+	transition-duration: 2s;
+	background-color: #e85b4a;
+	color: #e85b4a; /* temp disable showing the actual percentage */
+}
+
+p {
+	line-height: 25px;
+}
+
+p a, article a {
+	color: #e85b4a;
+	text-decoration: none;
+}
+
+p a:hover, article a:hover {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+section#introduction aside {
+	text-align: center;
+}
+
+img#me {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	border: 1px solid #ddd;
+	box-shadow: 0px 0px 5px #ddd;
+}
+
+aside.image img {
+	width: 100%;
+	border: 1px solid #ddd;
+	box-shadow: 0px 0px 5px #ddd;
+}
+
+article > section.project {
+	margin: 0;
+	padding: 0;
+}
+
+div.timeframe {
+	text-align: center;
+	line-height: 25px;
+	color: #999;
+}
+
+form label {
+	float: left;
+	font-weight: 400;
+	font-size: 9pt;
+}
+
+form input, form textarea {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+form input[type="submit"] {
+	color: white;
+	background-color: #e85b4a;
+	border: 0;
+	border-radius: 5px;
+	height: 20pt;
+}
+
+ul.personal-links {
+	list-style: none;
+	margin: 20px 0px 0px 0px;
+	padding: 0;
+}
+
+ul.personal-links li {
+	float: left;
+	width: 33%;
+	line-height: 25px;
+	height: 25px;
+}
+
+ul.personal-links li:nth-child(3) {
+	clear: both;
+}
+
+ul.personal-links li span.glyphicon {
+	color: #e85b4a;
+}
+
+ul.personal-links li a {
+	color: #333;
+}
+
+ul.personal-links li a:hover {
+	text-decoration: none;
+	color: #e85b4a;
+}
+
+div#navigation-dot {
+	position: fixed;
+	top: 200px;
+	left: 39px;
+	width: 30px;
+	height: 30px;
+	background: #e85b4a;
+	border: 4px solid #fff;
+	border-radius: 15px;
+	z-index: 1000;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0px 0px 5px #ddd;
+}
+
+body:before {
+    content:"";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    width: 0;
+    border-left: 4px solid #e85b4a;
+    border-right: 4px solid #e85b4a;
+	margin: 0;
+	padding: 0;
+}
+
+body:after {
+    content:"";
+    position: fixed;
+    z-index: 0;
+    top: 200px; /* should be equal to top position of the dot */
+    bottom: 0;
+    left: 50px;
+    width: 0;
+    border-left: 4px solid #f8f8f6;
+    border-right: 4px solid #f8f8f6;
+	margin: 0;
+	padding: 0;
+}
