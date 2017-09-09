@@ -1,8 +1,15 @@
+@accentColor: #e85b4a;
+@neutralColor: #f8f8f6;
+@shadowColor: #ddd;
+@textColor: #333;
+@lightTextColor: #999;
+@borderColor: #ccc;
+
 body {
 	font-family: "Open Sans", arial, sans-serif;
 	font-size: 11pt;
 	font-weight: 400;
-	color: #050506;
+	color: @textColor;
 	position: relative;
 	height: 100%;
 	overflow-y: scroll;
@@ -11,12 +18,12 @@ body {
 body > header {
 	height: 120px;
 	line-height: 80px;
-	background: #f8f8f6;
+	background: @neutralColor;
 	padding: 20px;
 	margin: 0 !important;
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
-	box-shadow: 0px 0px 5px #ddd;
+	box-shadow: 0px 0px 5px @shadowColor;
 }
 
 body > header.scrolled {
@@ -56,7 +63,7 @@ nav ul {
 
 nav ul li {
 	float: left;
-	color: #333;
+	color: @textColor;
 	margin: 0 10pt;
 	display: inline-block;
 }
@@ -76,7 +83,7 @@ nav ul li a:before {
 	height: 2px;
 	bottom: 0;
 	left: 0;
-	background-color: #e85b4a;
+	background-color: @accentColor;
 	visibility: hidden;
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
@@ -92,15 +99,15 @@ nav ul li a:hover:before {
 
 nav ul li a:hover {
 	text-decoration: none;
-	color: #e85b4a;
+	color: @accentColor;
 }
 
 body > section {
 	margin-left: 100px !important; /* don't like !important but we need it to override bootstrap */
 	margin-right: 50px !important;
 	margin-top: 50px;
-	border: 1px solid #ddd;
-	box-shadow: 0px 0px 5px #ddd;
+	border: 1px solid @shadowColor;
+	box-shadow: 0px 0px 5px @shadowColor;
 	padding: 20px;
 }
 
@@ -115,7 +122,7 @@ body > section header h2 {
 
 body > section header h2:before,
 body > section header h2:after {
-	background: #e85b4a;
+	background: @accentColor;
 	height: 2px;
 	content: '';
 	width: 100px;
@@ -131,13 +138,13 @@ aside {
 }
 
 section > article, section > form {
-	border-left: 1px solid #e85b4a;
+	border-left: 1px solid @accentColor;
 	padding: 0 20px;
 }
 
 @media (min-width: 970px) { 
 	section#introduction > article {
-		border-right: 1px solid #e85b4a;
+		border-right: 1px solid @accentColor;
 		border-left: 0;
 	}
 }
@@ -156,14 +163,14 @@ footer {
 	margin: 20pt 0 0 0 !important;
 	padding: 20px;
 	height: 100px;
-	background: #f8f8f6;
+	background: @neutralColor;
 	z-index: 1;
-	box-shadow: 0px 0px 5px #ddd;
+	box-shadow: 0px 0px 5px @shadowColor;
 }
 
 footer p {
 	letter-spacing: 7px;
-	color: #999;
+	color: @lightTextColor;
 	font-weight: 300;
 	line-height: 60px;
 	text-transform: uppercase;
@@ -174,7 +181,7 @@ footer p {
 
 footer p:before,
 footer p:after {
-	background: #e85b4a;
+	background: @accentColor;
 	height: 2px;
 	content: '';
 	width: 100px;
@@ -193,7 +200,7 @@ h1 a {
 }
 
 h2 {
-	color: #e85b4a;
+	color: @accentColor;
 	font-size: 16pt;
 }
 
@@ -208,13 +215,13 @@ h2 a:hover {
 
 
 h3 em {
-	color: #e85b4a;
+	color: @accentColor;
 	font-style: normal;
 }
 
 section#skills h3 {
 	font-size: 10pt;
-	border-left: 10pt solid #e85b4a;
+	border-left: 10pt solid @accentColor;
 	padding: 0 0 0 5pt;
 	margin: 0 0 15pt 0;
 }
@@ -226,8 +233,8 @@ section#skills label {
 
 section#skills .progress-bar {
 	transition-duration: 2s;
-	background-color: #e85b4a;
-	color: #e85b4a; /* temp disable showing the actual percentage */
+	background-color: @accentColor;
+	color: @accentColor; /* temp disable showing the actual percentage */
 }
 
 p {
@@ -235,7 +242,7 @@ p {
 }
 
 p a, article a {
-	color: #e85b4a;
+	color: @accentColor;
 	text-decoration: none;
 }
 
@@ -252,14 +259,14 @@ img#me {
 	border-radius: 50%;
 	width: 300px;
 	height: 300px;
-	border: 1px solid #ddd;
-	box-shadow: 0px 0px 5px #ddd;
+	border: 1px solid @shadowColor;
+	box-shadow: 0px 0px 5px @shadowColor;
 }
 
 aside.image img {
 	width: 100%;
-	border: 1px solid #ddd;
-	box-shadow: 0px 0px 5px #ddd;
+	border: 1px solid @shadowColor;
+	box-shadow: 0px 0px 5px @shadowColor;
 }
 
 article > section.project {
@@ -270,7 +277,7 @@ article > section.project {
 div.timeframe {
 	text-align: center;
 	line-height: 25px;
-	color: #999;
+	color: @lightTextColor;
 }
 
 form label {
@@ -284,14 +291,14 @@ form input, form textarea {
 	float: left;
 	width: 100%;
 	margin-bottom: 10px;
-	border: 1px solid #ccc;
+	border: 1px solid @borderColor;
 	border-radius: 5px;
 	padding: 5px;
 }
 
 form input[type="submit"] {
 	color: white;
-	background-color: #e85b4a;
+	background-color: @accentColor;
 	border: 0;
 	border-radius: 5px;
 	height: 20pt;
@@ -315,16 +322,16 @@ ul.personal-links li:nth-child(3) {
 }
 
 ul.personal-links li span.glyphicon {
-	color: #e85b4a;
+	color: @accentColor;
 }
 
 ul.personal-links li a {
-	color: #333;
+	color: @textColor;
 }
 
 ul.personal-links li a:hover {
 	text-decoration: none;
-	color: #e85b4a;
+	color: @accentColor;
 }
 
 div#navigation-dot {
@@ -333,13 +340,13 @@ div#navigation-dot {
 	left: 39px;
 	width: 30px;
 	height: 30px;
-	background: #e85b4a;
+	background: @accentColor;
 	border: 4px solid #fff;
 	border-radius: 15px;
 	z-index: 1000;
 	margin: 0;
 	padding: 0;
-	box-shadow: 0px 0px 5px #ddd;
+	box-shadow: 0px 0px 5px @shadowColor;
 }
 
 body:before {
@@ -350,8 +357,8 @@ body:before {
     bottom: 0;
     left: 50px;
     width: 0;
-    border-left: 4px solid #e85b4a;
-    border-right: 4px solid #e85b4a;
+    border-left: 4px solid @accentColor;
+    border-right: 4px solid @accentColor;
 	margin: 0;
 	padding: 0;
 }
@@ -364,8 +371,8 @@ body:after {
     bottom: 0;
     left: 50px;
     width: 0;
-    border-left: 4px solid #f8f8f6;
-    border-right: 4px solid #f8f8f6;
+    border-left: 4px solid @neutralColor;
+    border-right: 4px solid @neutralColor;
 	margin: 0;
 	padding: 0;
 }
