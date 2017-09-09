@@ -20,7 +20,7 @@ Introducing support for xs and sm views as well as testing on other devices and 
 
 Optimisation of the HTML & CSS code by introducing concepts as LESS and cleaning up all the code.
 
-### Version 1.0 (Current release): live on 09 sep 2017
+### Version 1.0 (Current release): live on ? sep 2017
 
 Earliest version was only in HTML5, CSS3 & some small JavaScript. It contained the most basic styling and basic text and could be regarded as a setup phase. There was only support for >md views and was only tested in Chrome.
 
