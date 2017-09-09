@@ -13,6 +13,7 @@ body > header {
 	line-height: 80px;
 	background: #f8f8f6;
 	padding: 20px;
+	margin: 0 !important;
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 	box-shadow: 0px 0px 5px #ddd;
@@ -152,7 +153,7 @@ section#introduction {
 footer {
 	text-align: center;
 	font-size: 11pt;
-	margin: 20pt 0 0 0;
+	margin: 20pt 0 0 0 !important;
 	padding: 20pt;
 	background: #f8f8f6;
 	z-index: 1;
