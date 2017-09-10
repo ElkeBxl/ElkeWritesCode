@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="curriculum">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -146,69 +146,24 @@
 			<div class="row">
 				<section class="col-md-3">
 					<h3>Languages</h3>
-					<label>Dutch</label>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
-						95%
-						</div>
-					</div>
-					<label>English</label>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
-						85%
-						</div>
-					</div>
-					<label>French</label>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-						70%
-						</div>
-					</div>
+					<skill name="Dutch" level="95"></skill>
+					<skill name="English" level="85"></skill>
+					<skill name="French" level="70"></skill>
 				</section>
 				<section class="col-md-3">
 					<h3>Front-end</h3>
-					<label>HTML</label>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
-						85%
-						</div>
-					</div>
-					<label>CSS</label>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-						80%
-						</div>
-					</div>
-					<label>AngularJS</label>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-						70%
-						</div>
-					</div>
+					<skill name="HTML" level="85"></skill>
+					<skill name="CSS" level="80"></skill>
+					<skill name="AngularJS" level="70"></skill>
 				</section>
 				<section class="col-md-3">
 					<h3>Back-end</h3>					
-					<label>C#</label>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-						70%
-						</div>
-					</div>
-					<label>SQL server</label>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-						70%
-						</div>
-					</div>
+					<skill name="C#" level="70"></skill>	
+					<skill name="SQL server" level="70"></skill>
 				</section>
 				<section class="col-md-3">
 					<h3>Communication</h3>
-					<label>SCRUM</label>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-						70%
-						</div>
-					</div>
+					<skill name="SCRUM" level="70"></skill>
 				</section>
 			</div>
 		</section>
@@ -243,6 +198,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js?v=3.3.7"></script>
 		<script src="js/angular.min.js?v1.6.5"></script>
+		<script src="angular/module.js"></script>
+		<script src="angular/skill.component.js"></script>
 		<script src="js/default.js"></script>
 	</body>
 </html>
