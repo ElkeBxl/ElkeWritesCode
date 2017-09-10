@@ -7,12 +7,12 @@
 
 .shadow() {  
 	box-shadow: 0px 0px 5px @shadowColor;
-};
+}
 
 .transition(@seconds: 0s; @easeType: ease) {	
 	-webkit-transition: all @seconds @easeType;
 	transition: all @seconds @easeType;
-};
+}
 
 body {
 	font-family: "Open Sans", arial, sans-serif;
@@ -23,7 +23,7 @@ body {
 	height: 100%;
 	overflow-y: scroll;
 
-	.bodyLine {
+	.bodyLine() {
 	    content:"";
 	    position: fixed;
 	    bottom: 0;
@@ -34,7 +34,7 @@ body {
 	}
 
 	&:before {
-		@extends .bodyLine;
+		.bodyLine;
 	    z-index: -1;
 	    top: 0;
 	    border-left: 4px solid @accentColor;
@@ -42,7 +42,7 @@ body {
 	}
 
 	&:after {
-		@extends .bodyLine;
+		.bodyLine;
 	    position: fixed;
 	    z-index: 0;
 	    top: 200px; /* should be equal to top position of the dot */
