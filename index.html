@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Elke writes code: my resume and portfolio</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
-		<!--<link href="css/default.css" rel="stylesheet" />-->
 		<link href="css/default.less" rel="stylesheet/less" type="text/css" />
 		<script src="js/less.min.js" type="text/javascript"></script>
 		<!--[if lt IE 9]>
@@ -27,7 +26,6 @@
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#personalprojects">Personal projects</a></li>
 					<li><a href="#contactme">Contact me</a></li>
-					<!--<li><a href="">Download CV</a></li>-->
 				</ul>
 			</nav>
 		</header>
@@ -46,8 +44,6 @@
 					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 0495 42 78 19</li>
 					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:info@elkewritescode.be">info&commat;elkewritescode.be</a></li>
 					<li><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> <a href="https://www.linkedin.com/in/elkeheymans/">LinkedIn</a></li>
-					<!--<li><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Facebook</li>
-					<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <a href="https://twitter.com/elkebxl">Twitter</a></li>-->
 				</ul>
 			</article>
 		</section>
@@ -55,32 +51,22 @@
 			<header class="col-md-12">
 				<h2><a name="experience">Experience</a></h2>
 			</header>
-			<section class="row">
-				<aside class="col-md-2">
-					AG Insurance
-				</aside>
-				<article class="col-md-10">
-					<timeframe start="Jan '15">
-						I returned to my first team to continue development on internal .Net web/batch applications. I also started working at newer projects that use ASP.Net MVC and AngularJS. With the newer projects came new responsibilities such as doing analysis, reporting to clients and leading daily standup meetings. Currently I enjoy doing multiple aspects of a project: helping with defining requirements, developing applications and helping with deployment and maintenance.
-					</timeframe>
-					<timeframe start="Sep '14" end="Dec '14">
-						As part of being a new developer at AG Insurance, I had to do an internship at their backend.
-					</timeframe>
-					<timeframe start="Apr '14" end="Aug '14">
-						I started as a .Net developer on an internal web/batch application.
-					</timeframe>
-				</article>
-			</section>
-			<section class="row">
-				<aside class="col-md-2">
-					Vrije Universiteit Brussel
-				</aside>
-				<article class="col-md-10">
-					<timeframe start="Oct '13" end="Jan '14">
-						After graduating, I was offered a contract of 4 months by my thesis promotor as a Java developer to finish developments on a research project that was being finalised.
-					</timeframe>
-				</article>
-			</section>
+			<location name="AG Insurance">
+				<timeframe start="Jan '15">
+					I returned to my first team to continue development on internal .Net web/batch applications. I also started working at newer projects that use ASP.Net MVC and AngularJS. With the newer projects came new responsibilities such as doing analysis, reporting to clients and leading daily standup meetings. Currently I enjoy doing multiple aspects of a project: helping with defining requirements, developing applications and helping with deployment and maintenance.
+				</timeframe>
+				<timeframe start="Sep '14" end="Dec '14">
+					As part of being a new developer at AG Insurance, I had to do an internship at their backend.
+				</timeframe>
+				<timeframe start="Apr '14" end="Aug '14">
+					I started as a .Net developer on an internal web/batch application.
+				</timeframe>
+			</location>
+			<location name="Vrije Universiteit Brussel">
+				<timeframe start="Oct '13" end="Jan '14">
+					After graduating, I was offered a contract of 4 months by my thesis promotor as a Java developer to finish developments on a research project that was being finalised.
+				</timeframe>
+			</location>
 		</section>
 		<section class="row" id="education">
 			<header class="col-md-12">
@@ -94,19 +80,14 @@
 					<p>I'm a firm believer of the fact that you should never stop learning. That's why I use my spare time to learn more about web development by following multiple courses on Pluralsight. I try to use these newly learned concepts in my own personal projects.</p>
 				</article>
 			</section>
-			<section class="row">
-				<aside class="col-md-2">
-					Vrije Universiteit Brussel
-				</aside>
-				<article class="col-md-10">
-					<timeframe start="2011" end="2013">
-						<em>Master of Science: Computerwetenschappen</em><br />Specialisation in Web &amp; Information Systems. I chose this as it gave me a good basis about website technologies, databases and user interface design.
-					</timeframe>					
-					<timeframe start="2008" end="2011">
-						<em>Bachelor of Science: Computerwetenschappen</em>
-					</timeframe>
-				</article>
-			</section>
+			<location name="Vrije Universiteit Brussel">
+				<timeframe start="2011" end="2013">
+					<em>Master of Science: Computerwetenschappen</em><br />Specialisation in Web &amp; Information Systems. I chose this as it gave me a good basis about website technologies, databases and user interface design.
+				</timeframe>					
+				<timeframe start="2008" end="2011">
+					<em>Bachelor of Science: Computerwetenschappen</em>
+				</timeframe>
+			</location>
 		</section>
 		<section class="row" id="skills">
 			<header class="col-md-12">
@@ -170,6 +151,7 @@
 		<script src="angular/module.js"></script>
 		<script src="angular/skill.component.js"></script>
 		<script src="angular/timeframe.component.js"></script>
+		<script src="angular/location.component.js"></script>
 		<script src="js/default.js"></script>
 	</body>
 </html>
