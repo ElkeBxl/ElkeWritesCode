@@ -5,6 +5,15 @@
 @lightTextColor: #999;
 @borderColor: #ccc;
 
+@mixin shadow() {  
+	box-shadow: 0px 0px 5px @shadowColor;
+}
+
+@mixin transition(@seconds, @easeType = ease) {	
+	-webkit-transition: all @seconds @easeType;
+	transition: all @seconds @easeType;
+}
+
 body {
 	font-family: "Open Sans", arial, sans-serif;
 	font-size: 11pt;
@@ -49,9 +58,8 @@ body > header {
 	background: @neutralColor;
 	padding: 20px;
 	margin: 0 !important;
-	-webkit-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-	box-shadow: 0px 0px 5px @shadowColor;
+	@include transition(0.4s);
+	@include shadow();
 
 	h1 {
 		margin: 0 0 0 100px;
@@ -59,8 +67,7 @@ body > header {
 		background-size: 100% 100%;
 		height: 80px;
 		width: 267px;
-		-webkit-transition: all 0.4s ease;
-		transition: all 0.4s ease;
+		@include transition(0.4s);
 
 		span {
 			visibility: hidden;
@@ -109,8 +116,7 @@ nav ul {
 				visibility: hidden;
 				-webkit-transform: scaleX(0);
 				transform: scaleX(0);
-				-webkit-transition: all 0.3s ease-in-out 0s;
-				transition: all 0.3s ease-in-out 0s;
+				@include transition(0.3s, ease-in-out);
 			}
 
 			&:hover:before {
@@ -132,7 +138,7 @@ body > section {
 	margin-right: 50px !important;
 	margin-top: 50px;
 	border: 1px solid @shadowColor;
-	box-shadow: 0px 0px 5px @shadowColor;
+	@include shadow();
 	padding: 20px;
 
 	header h2 {
@@ -190,7 +196,7 @@ footer {
 	height: 100px;
 	background: @neutralColor;
 	z-index: 1;
-	box-shadow: 0px 0px 5px @shadowColor;
+	@include shadow();
 
 	p {
 		letter-spacing: 7px;
@@ -256,7 +262,7 @@ section#skills label {
 }
 
 section#skills .progress-bar {
-	transition-duration: 2s;
+	@include transition(2s);
 	background-color: @accentColor;
 	color: @accentColor; /* temp disable showing the actual percentage */
 }
@@ -284,13 +290,13 @@ img#me {
 	width: 300px;
 	height: 300px;
 	border: 1px solid @shadowColor;
-	box-shadow: 0px 0px 5px @shadowColor;
+	@include shadow();
 }
 
 aside.image img {
 	width: 100%;
 	border: 1px solid @shadowColor;
-	box-shadow: 0px 0px 5px @shadowColor;
+	@include shadow();
 }
 
 article > section.project {
@@ -370,5 +376,5 @@ div#navigation-dot {
 	z-index: 1000;
 	margin: 0;
 	padding: 0;
-	box-shadow: 0px 0px 5px @shadowColor;
+	@include shadow();
 }
