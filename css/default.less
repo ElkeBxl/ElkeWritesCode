@@ -5,14 +5,14 @@
 @lightTextColor: #999;
 @borderColor: #ccc;
 
-@mixin shadow() {  
+.shadow() {  
 	box-shadow: 0px 0px 5px @shadowColor;
-}
+};
 
-@mixin transition(@seconds, @easeType = ease) {	
+.transition(@seconds: 0s; @easeType: ease) {	
 	-webkit-transition: all @seconds @easeType;
 	transition: all @seconds @easeType;
-}
+};
 
 body {
 	font-family: "Open Sans", arial, sans-serif;
@@ -57,8 +57,8 @@ body > header {
 	background: @neutralColor;
 	padding: 20px;
 	margin: 0 !important;
-	@include transition(0.4s);
-	@include shadow();
+	.transition(0.4s);
+	.shadow();
 
 	h1 {
 		margin: 0 0 0 100px;
@@ -66,7 +66,7 @@ body > header {
 		background-size: 100% 100%;
 		height: 80px;
 		width: 267px;
-		@include transition(0.4s);
+		.transition(0.4s);
 
 		span {
 			visibility: hidden;
@@ -115,7 +115,7 @@ nav ul {
 				visibility: hidden;
 				-webkit-transform: scaleX(0);
 				transform: scaleX(0);
-				@include transition(0.3s, ease-in-out);
+				.transition(0.3s, ease-in-out);
 			}
 
 			&:hover:before {
@@ -137,7 +137,7 @@ body > section {
 	margin-right: 50px !important;
 	margin-top: 50px;
 	border: 1px solid @shadowColor;
-	@include shadow();
+	.shadow();
 	padding: 20px;
 
 	header h2 {
@@ -195,7 +195,7 @@ footer {
 	height: 100px;
 	background: @neutralColor;
 	z-index: 1;
-	@include shadow();
+	.shadow();
 
 	p {
 		letter-spacing: 7px;
@@ -261,7 +261,7 @@ section#skills label {
 }
 
 section#skills .progress-bar {
-	@include transition(2s);
+	.transition(2s);
 	background-color: @accentColor;
 	color: @accentColor; /* temp disable showing the actual percentage */
 }
@@ -289,13 +289,13 @@ img#me {
 	width: 300px;
 	height: 300px;
 	border: 1px solid @shadowColor;
-	@include shadow();
+	.shadow();
 }
 
 aside.image img {
 	width: 100%;
 	border: 1px solid @shadowColor;
-	@include shadow();
+	.shadow();
 }
 
 article > section.project {
@@ -375,5 +375,5 @@ div#navigation-dot {
 	z-index: 1000;
 	margin: 0;
 	padding: 0;
-	@include shadow();
+	.shadow();
 }
