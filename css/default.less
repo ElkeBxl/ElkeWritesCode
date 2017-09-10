@@ -23,32 +23,31 @@ body {
 	height: 100%;
 	overflow-y: scroll;
 
-	&:before {
+	.bodyLine {
 	    content:"";
 	    position: fixed;
-	    z-index: -1;
-	    top: 0;
 	    bottom: 0;
 	    left: 50px;
-	    width: 0;
+	    width: 0;	
+		margin: 0;
+		padding: 0;    
+	}
+
+	&:before {
+		@extends .bodyLine;
+	    z-index: -1;
+	    top: 0;
 	    border-left: 4px solid @accentColor;
 	    border-right: 4px solid @accentColor;
-		margin: 0;
-		padding: 0;
 	}
 
 	&:after {
-	    content:"";
+		@extends .bodyLine;
 	    position: fixed;
 	    z-index: 0;
 	    top: 200px; /* should be equal to top position of the dot */
-	    bottom: 0;
-	    left: 50px;
-	    width: 0;
 	    border-left: 4px solid @neutralColor;
 	    border-right: 4px solid @neutralColor;
-		margin: 0;
-		padding: 0;
 	}
 }
 
