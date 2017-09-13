@@ -28,3 +28,6 @@ Optimisation of the HTML & CSS code by introducing concepts as LESS and cleaning
 
 Earliest version was only in HTML5, CSS3 & some small JavaScript. It contained the most basic styling and basic text and could be regarded as a setup phase. There was only support for >md views and was only tested in Chrome.
 
+## Deployment notes
+
+* If you're using .less directly in the browser on an IIS server, don't forget to add the MIME-type for .less. It should be text/css. This can be done in the web.config or (if possible) in the controlpanel of your host
