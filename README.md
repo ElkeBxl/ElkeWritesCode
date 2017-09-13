@@ -1,6 +1,6 @@
 # ElkeWritesCode
 
-Curriculum Vitae site for Elke Heymans.
+Curriculum Vitae site for Elke Heymans. A live version can be seen at [elkewritescode.be](http://www.elkewritescode.be)
 
 ## The story behind this
 
