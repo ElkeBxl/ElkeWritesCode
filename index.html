@@ -15,11 +15,22 @@
 	</head>
 	<body>
 		<header class="row navbar-fixed-top">
-			<section class="col-md-4">
+			<section class="col-md-4 col-xs-8">
 				<h1><span>Elke writes code</span></h1>
 			</section>
-			<nav class="col-md-8">
+			<nav class="hidden-xs hidden-sm col-md-8" role="navigation">
 				<ul>
+					<li><a href="#introduction">Hello!</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#personalprojects">Personal projects</a></li>
+					<li><a href="#contactme">Contact me</a></li>
+				</ul>
+			</nav>
+			<nav class="dropdown hidden-md hidden-lg col-xs-4">
+				<button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
+				<ul class="dropdown-menu">
 					<li><a href="#introduction">Hello!</a></li>
 					<li><a href="#experience">Experience</a></li>
 					<li><a href="#education">Education</a></li>
@@ -30,13 +41,13 @@
 			</nav>
 		</header>
 		<section class="row" id="introduction">
-			<header class="col-md-12">
-				<h2><a name="introduction">Hi there!</a></h2>
+			<header class="col-md-12 col-xs-12">
+				<h2><a name="introduction">Hi&nbsp;there!</a></h2>
 			</header>
-			<aside class="col-md-4 col-md-push-8">
+			<aside class="col-md-4 col-md-push-8 col-xs-12">
 				<img src="img/me.jpg" id="me" alt="Picture of me" />
 			</aside>
-			<article class="col-md-8 col-md-pull-4">
+			<article class="col-md-8 col-md-pull-4 col-xs-12">
 				<h3>My name is Elke, I'm a <em>webdeveloper</em> and <em>photographer</em></h3>
 				<p>IT has always been one of my biggest interests. At a young age, I already was pretty curious on how to develop websites, both front-end and back-end. The obvious choice for me was to pursue a career in IT. As a side job, I also do photography in which I can let my creativity bloom. In my spare time I like to work on personal photography projects, catch some good concerts and hang out with friends.</p>
 				<ul class="personal-links">
@@ -48,7 +59,7 @@
 			</article>
 		</section>
 		<section class="row" id="experience">
-			<header class="col-md-12">
+			<header class="col-md-12 col-xs-12">
 				<h2><a name="experience">Experience</a></h2>
 			</header>
 			<location name="AG Insurance">
@@ -69,14 +80,14 @@
 			</location>
 		</section>
 		<section class="row" id="education">
-			<header class="col-md-12">
+			<header class="col-md-12 col-xs-12">
 				<h2><a name="education">Education</a></h2>
 			</header>
 			<section class="row">
-				<aside class="col-md-2">
+				<aside class="col-md-2 col-xs-12">
 					Extra courses
 				</aside>
-				<article class="col-md-10">
+				<article class="col-md-10 col-xs-12">
 					<p>I'm a firm believer of the fact that you should never stop learning. That's why I use my spare time to learn more about web development by following multiple courses on Pluralsight. I try to use these newly learned concepts in my own personal projects.</p>
 				</article>
 			</section>
@@ -90,53 +101,53 @@
 			</location>
 		</section>
 		<section class="row" id="skills">
-			<header class="col-md-12">
+			<header class="col-md-12 col-xs-12">
 				<h2><a name="skills">Skills</a></h2>
 			</header>
 			<div class="row">
-				<section class="col-md-3">
+				<section class="col-md-3 col-xs-12">
 					<h3>Languages</h3>
 					<skill name="Dutch" level="95"></skill>
 					<skill name="English" level="85"></skill>
 					<skill name="French" level="70"></skill>
 				</section>
-				<section class="col-md-3">
+				<section class="col-md-3 col-xs-12">
 					<h3>Front-end</h3>
 					<skill name="HTML" level="85"></skill>
 					<skill name="CSS" level="80"></skill>
 					<skill name="AngularJS" level="70"></skill>
 				</section>
-				<section class="col-md-3">
+				<section class="col-md-3 col-xs-12">
 					<h3>Back-end</h3>					
 					<skill name="C#" level="70"></skill>	
 					<skill name="SQL server" level="70"></skill>
 				</section>
-				<section class="col-md-3">
+				<section class="col-md-3 col-xs-12">
 					<h3>Communication</h3>
 					<skill name="SCRUM" level="70"></skill>
 				</section>
 			</div>
 		</section>
 		<section class="row" id="personalprojects">
-			<header class="col-md-12">
+			<header class="col-md-12 col-xs-12">
 				<h2><a name="personalprojects">Personal projects</a></h2>
 			</header>
 			<section class="row">
-				<aside class="col-md-2">
+				<aside class="col-md-2 col-xs-12">
 					My photography portfolio
 				</aside>
-				<article class="col-md-8">
+				<article class="col-md-8 col-xs-12">
 					<p>What started out as a hobby, grew eventually into a passion. In February 2017, I made the jump to become a photographer in my spare time. This allowed me to express my creativity even more and to pay back all the expenses that I made for my photography. I've developed my own <a href="http://elke.photos">portfolio</a> in HTML5 &amp; CSS3 with the help of AngularJS to show my latest assignments. The reason why I've developed it myself, was to have all the freedom I needed. I'm currently in the process of redesigning my portfolio and rebuilding it with a proper .Net Core backend and an AngularJS frontend. In future releases, a migration to Angular2 might be interesting to test my skills.</p>
 				</article>
-				<aside class="col-md-2 image">
+				<aside class="col-md-2 col-xs-12 image">
 					<a href="http://elke.photos"><img src="img/personal.elkephotos.png" alt="Elke.photos website screenshot" /></a>
 				</aside>
 			</section>
 			<section class="row">
-				<aside class="col-md-2">
+				<aside class="col-md-2 col-xs-12">
 					My curriculum vitae
 				</aside>
-				<article class="col-md-10">
+				<article class="col-md-10 col-xs-12">
 					<p>Also known as this site. I've always wanted to tackle the challenge of designing and implementing my own responsive website in HTML5 &amp; CSS3 with the help of Bootstrap3 and as little as possible JavaScript. I've built everything from scratch and you can check out the source code on the GitHub <a href="https://github.com/ElkeBxl/ElkeWritesCode">project</a> page.</p>
 				</article>
 			</section>
