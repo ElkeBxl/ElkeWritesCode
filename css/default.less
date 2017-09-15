@@ -151,6 +151,11 @@ nav ul {
 			padding: 5px;
 			font-size: 10pt;
 
+			&:focus, &:active {
+				color: @accentColor;
+				text-decoration: none;
+			}
+
 			&:before {
 				content: "";
 				position: absolute;
@@ -165,7 +170,7 @@ nav ul {
 				.transition(0.3s, ease-in-out);
 			}
 
-			&:hover:before {
+			&:hover:before, &:focus:before, &:active:before {
 				visibility: visible;
 				-webkit-transform: scaleX(1);
 				transform: scaleX(1);
