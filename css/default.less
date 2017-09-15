@@ -293,7 +293,7 @@ aside {
 
 section > article, section > form {
 	border-left: 1px solid @accentColor;
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
 @media (max-width: 768px) { 
@@ -322,15 +322,15 @@ body > section section {
 
 section#introduction {
 	margin-top: 160px;
+
+	> article p {
+		padding: 0;
+	}
 }
 
 @media (max-width: 768px) { 
 	section#introduction {
 		margin-top: 80px;
-
-		> article p {
-			padding: 0;
-		}
 	}
 }
 
@@ -459,8 +459,7 @@ section#skills .progress-bar {
 
 p {
 	line-height: 25px;
-
-		padding: 15px;
+	padding: 0 15px;
 }
 
 @media (max-width: 768px) { 
@@ -520,6 +519,7 @@ div.timeframe {
 	text-align: center;
 	line-height: 25px;
 	color: @lightTextColor;
+	padding: 0;
 }
 
 form label {
