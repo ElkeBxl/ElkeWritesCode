@@ -31,4 +31,5 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 // animated progress bars
 $(document).ready(function() {
     $(".progress-bar").css("width", 0);
+    $('body').scrollspy({ target: '.navbar' });
 });
