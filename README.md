@@ -16,7 +16,7 @@ I will continue to update this CV site as much as possible. My goal is to utilis
 
 Mostly optimisations to enhance the speed. We'll add precompilation of the LESS, minification of the JS, minification of the CSS, a generic approach to deploy everything, ...
 
-### Version 3.0 (Next release): date TBD
+### Version 3.0 (Next release): live on 16 sep 2017
 
 Introducing support for xs and sm views as well as testing on other devices and browsers.
 
